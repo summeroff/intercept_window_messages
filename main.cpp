@@ -57,10 +57,10 @@ int main(int argc, char* argv[])
 							std::cout <<  "Failed to hook to messages preview window " << std::endl;
 						}
 						
-						hhook_slobs = SetWindowsHookEx(WH_CALLWNDPROC, hook_addr, dll_handle, slobsProcId);
+						//hhook_slobs = SetWindowsHookEx(WH_CALLWNDPROC, hook_addr, dll_handle, slobsProcId);
 
 						//PostThreadMessage(actualProcId, WM_NULL, NULL, NULL);
-						PostThreadMessage(actualProcId, WM_PAINT, NULL, NULL);
+						//PostThreadMessage(actualProcId, WM_PAINT, NULL, NULL);
 					} else {
 						std::cout << "Failed to get hook procedure !" << std::endl;
 					}

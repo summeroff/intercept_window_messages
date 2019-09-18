@@ -187,6 +187,13 @@ std::map<std::string, int> msg_ids = {
 	, { "SPI_SETSNAPSIZING", 0x008F }
 	, { "SPI_GETDOCKMOVING", 0x0090 }
 	, { "SPI_SETDOCKMOVING", 0x0091 }
+	, { "WM_PARENTNOTIFY", 0x0210 }
+	, { "WM_ENTERMENULOOP", 0x0211 }
+	, { "WM_EXITMENULOOP", 0x0212 }
+	, { "WM_NEXTMENU", 0x0213 }
+	, { "WM_SIZING", 0x0214 }
+	, { "WM_CAPTURECHANGED", 0x0215 }
+	, { "WM_MOVING", 0x0216 }
 };
 
 std::string getMsgName(int id)
